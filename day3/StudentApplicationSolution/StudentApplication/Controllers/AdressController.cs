@@ -169,7 +169,7 @@ namespace AdressApplication.Controllers
                     connection.Close();
                     connection.Open();
                     SqlDataAdapter adapter = new SqlDataAdapter("SELECT Adress_id, City FROM Adress;", connection);
-                    adapter.UpdateCommand = new SqlCommand("UPDATE Adress SET City = @city;", connection);
+                    adapter.UpdateCommand = new SqlCommand("UPDATE Adress SET City = @city WHERE Adress_id = @adress_id;", connection);
 
                     adapter.UpdateCommand.Parameters.Add("@city", System.Data.SqlDbType.VarChar).Value = city;
          
@@ -181,7 +181,7 @@ namespace AdressApplication.Controllers
                     System.Data.DataTable categoryTable = new System.Data.DataTable();
                     adapter.Fill(categoryTable);
 
-                    System.Data.DataRow categoryRow = categoryTable.Rows[3];
+                    System.Data.DataRow categoryRow = categoryTable.Rows[0];
                     categoryRow["City"] = city;
 
 
