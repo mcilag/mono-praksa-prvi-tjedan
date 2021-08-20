@@ -249,6 +249,20 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Student.Model\Student.Model.csproj">
+      <Project>{89278547-fb6b-48d2-b80a-deb3c334fc0a}</Project>
+      <Name>Student.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Student._Repository\Student._Repository.csproj">
+      <Project>{6dc59926-2012-4364-8dd4-8f9a759b7e07}</Project>
+      <Name>Student._Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Student._Service\Student._Service.csproj">
+      <Project>{469a62b2-ec80-4caa-902c-32ba08f46f53}</Project>
+      <Name>Student._Service</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

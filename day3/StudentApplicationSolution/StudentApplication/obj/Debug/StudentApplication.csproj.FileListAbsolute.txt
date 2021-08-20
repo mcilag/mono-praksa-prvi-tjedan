@@ -168,3 +168,9 @@ C:\Users\Martina\Desktop\Praksa\day3\StudentApplicationSolution\StudentApplicati
 C:\Users\Martina\Desktop\Praksa\day3\StudentApplicationSolution\StudentApplication\obj\Debug\StudentApplication.csproj.CopyComplete
 C:\Users\Martina\Desktop\Praksa\day3\StudentApplicationSolution\StudentApplication\obj\Debug\StudentApplication.dll
 C:\Users\Martina\Desktop\Praksa\day3\StudentApplicationSolution\StudentApplication\obj\Debug\StudentApplication.pdb
+C:\Users\Martina\Desktop\Praksa\day3\StudentApplicationSolution\StudentApplication\bin\Student.Model.dll
+C:\Users\Martina\Desktop\Praksa\day3\StudentApplicationSolution\StudentApplication\bin\Student._Repository.dll
+C:\Users\Martina\Desktop\Praksa\day3\StudentApplicationSolution\StudentApplication\bin\Student._Service.dll
+C:\Users\Martina\Desktop\Praksa\day3\StudentApplicationSolution\StudentApplication\bin\Student.Model.pdb
+C:\Users\Martina\Desktop\Praksa\day3\StudentApplicationSolution\StudentApplication\bin\Student._Repository.pdb
+C:\Users\Martina\Desktop\Praksa\day3\StudentApplicationSolution\StudentApplication\bin\Student._Service.pdb
