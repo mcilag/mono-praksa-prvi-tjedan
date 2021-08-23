@@ -1,0 +1,11 @@
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentService.Common\bin\Debug\StudentService.Common.dll
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentService.Common\bin\Debug\StudentService.Common.pdb
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentService.Common\bin\Debug\Student.Model.dll
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentService.Common\bin\Debug\StudentModel.Common.dll
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentService.Common\bin\Debug\Student.Model.pdb
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentService.Common\bin\Debug\StudentModel.Common.pdb
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentService.Common\obj\Debug\StudentService.Common.csproj.AssemblyReference.cache
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentService.Common\obj\Debug\StudentService.Common.csproj.CoreCompileInputs.cache
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentService.Common\obj\Debug\StudentService.Common.csproj.CopyComplete
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentService.Common\obj\Debug\StudentService.Common.dll
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentService.Common\obj\Debug\StudentService.Common.pdb

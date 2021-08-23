@@ -5,14 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using Student.Model;
 using Student._Repository;
-using System.Threading.Tasks;
+using StudentService.Common;
 
 
 
 
-namespace Student._Service
+namespace Student._Service 
 {
-    public class StudentService
+    public class StudentService : IStudentService<Students>
     {
         StudentRepository studentRepository = new StudentRepository();
         public async Task<List<Students>> GetStudentsAsync()

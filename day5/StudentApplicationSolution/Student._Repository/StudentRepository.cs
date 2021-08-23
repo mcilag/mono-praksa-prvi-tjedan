@@ -7,11 +7,12 @@ using System.Data.SqlClient;
 using System.Configuration;
 using Student.Model;
 using System.Threading.Tasks;
+using StudentRepository.Common;
 
 namespace Student._Repository
 {
 
-    public class StudentRepository
+    public class StudentRepository: IStudentRepository<Students>
 
 
     {

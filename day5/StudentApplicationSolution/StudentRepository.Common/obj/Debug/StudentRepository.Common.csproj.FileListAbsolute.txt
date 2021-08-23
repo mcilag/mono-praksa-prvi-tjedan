@@ -1,0 +1,9 @@
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentRepository.Common\bin\Debug\StudentRepository.Common.dll
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentRepository.Common\bin\Debug\StudentRepository.Common.pdb
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentRepository.Common\bin\Debug\StudentModel.Common.dll
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentRepository.Common\bin\Debug\StudentModel.Common.pdb
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentRepository.Common\obj\Debug\StudentRepository.Common.csproj.AssemblyReference.cache
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentRepository.Common\obj\Debug\StudentRepository.Common.csproj.CoreCompileInputs.cache
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentRepository.Common\obj\Debug\StudentRepository.Common.csproj.CopyComplete
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentRepository.Common\obj\Debug\StudentRepository.Common.dll
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentRepository.Common\obj\Debug\StudentRepository.Common.pdb

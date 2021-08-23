@@ -2,7 +2,7 @@
 
 namespace Student.Model
 {
-    public class Students
+    public class Students : StudentModel.Common.IStudentModel
     {
 
         public Students() { }

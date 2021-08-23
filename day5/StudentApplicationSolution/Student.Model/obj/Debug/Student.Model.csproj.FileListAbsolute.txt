@@ -4,3 +4,12 @@ C:\Users\Martina\Desktop\Praksa\day3\StudentApplicationSolution\Student.Model\ob
 C:\Users\Martina\Desktop\Praksa\day3\StudentApplicationSolution\Student.Model\obj\Debug\Student.Model.csproj.CoreCompileInputs.cache
 C:\Users\Martina\Desktop\Praksa\day3\StudentApplicationSolution\Student.Model\obj\Debug\Student.Model.dll
 C:\Users\Martina\Desktop\Praksa\day3\StudentApplicationSolution\Student.Model\obj\Debug\Student.Model.pdb
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student.Model\bin\Debug\Student.Model.dll
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student.Model\bin\Debug\Student.Model.pdb
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student.Model\bin\Debug\StudentModel.Common.dll
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student.Model\bin\Debug\StudentModel.Common.pdb
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student.Model\obj\Debug\Student.Model.csproj.AssemblyReference.cache
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student.Model\obj\Debug\Student.Model.csproj.CoreCompileInputs.cache
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student.Model\obj\Debug\Student.Model.csproj.CopyComplete
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student.Model\obj\Debug\Student.Model.dll
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student.Model\obj\Debug\Student.Model.pdb

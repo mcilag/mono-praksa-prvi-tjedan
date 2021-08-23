@@ -50,6 +50,14 @@
       <Project>{89278547-fb6b-48d2-b80a-deb3c334fc0a}</Project>
       <Name>Student.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\StudentModel.Common\StudentModel.Common.csproj">
+      <Project>{1d4bf549-da2f-4b36-8c50-9033b65baa1d}</Project>
+      <Name>StudentModel.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudentRepository.Common\StudentRepository.Common.csproj">
+      <Project>{865dbaf1-bcad-4cd3-8034-08dc2f5e901c}</Project>
+      <Name>StudentRepository.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -45,5 +45,11 @@
     <Compile Include="StudentModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StudentModel.Common\StudentModel.Common.csproj">
+      <Project>{1d4bf549-da2f-4b36-8c50-9033b65baa1d}</Project>
+      <Name>StudentModel.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

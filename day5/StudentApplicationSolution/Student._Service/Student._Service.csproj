@@ -54,6 +54,10 @@
       <Project>{6dc59926-2012-4364-8dd4-8f9a759b7e07}</Project>
       <Name>Student._Repository</Name>
     </ProjectReference>
+    <ProjectReference Include="..\StudentService.Common\StudentService.Common.csproj">
+      <Project>{2c2d1476-5a46-4e91-9226-7c4a1fc0724c}</Project>
+      <Name>StudentService.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

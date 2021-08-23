@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using Student.Model;
 using Student._Repository;
-using System.Threading.Tasks;
+using StudentService.Common;
 
 
 namespace Student._Service
 {
-    public class AdressService
+    public class AdressService: IAdressService<Adress>
     {
         AdressRepository adressRepository = new AdressRepository();
         public async Task<List<Adress>> GetAdressesAsync()
