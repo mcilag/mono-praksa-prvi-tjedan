@@ -13,7 +13,7 @@ using StudentRepository.Common;
 namespace Student._Repository
 {
 
-    public class AdressRepository: IAdressRepository<Adress>
+    public class AdressRepository: IAdressRepository
 
 
     {

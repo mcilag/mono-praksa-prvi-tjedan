@@ -10,6 +10,7 @@ using System.Web.Http;
 using Student.Model;
 using Student._Service;
 using System.Threading.Tasks;
+using StudentService.Common;
 
 
 
@@ -19,14 +20,19 @@ namespace StudentApplication.Controllers
     public class StudentController : ApiController
     {
 
-        StudentService studentService = new StudentService();
+        IStudentService _studentService;
+
+        public StudentController(IStudentService studentService)
+        {
+            _studentService = studentService;
+        }
 
         // GET 
         [HttpGet]
         [Route("api/Student")]
         public async Task<HttpResponseMessage> GetAsync()
         {
-            List<Students> student = await studentService.GetStudentsAsync();
+            List<Students> student = await _studentService.GetStudentsAsync();
             if (student == null)
             {
                 return Request.CreateResponse(HttpStatusCode.NotFound, "There are no students");
@@ -39,7 +45,7 @@ namespace StudentApplication.Controllers
         [Route("api/Student/{Student_id}")]
         public async Task<HttpResponseMessage> GetByIdAsync(int student_id)
         {
-            Students student = await studentService.GetStudentByIdAsync(student_id);
+            Students student = await _studentService.GetStudentByIdAsync(student_id);
 
             if (student == null)
             {
@@ -55,7 +61,7 @@ namespace StudentApplication.Controllers
         [Route("api/Student")]
         public async Task<HttpResponseMessage> PostAsync([FromBody] Students student)
         {
-            bool feedback = await studentService.CreateStudentAsync(student);
+            bool feedback = await _studentService.CreateStudentAsync(student);
             if(feedback != true)
             {
                 return Request.CreateResponse(HttpStatusCode.NotFound, "There is no adress with id " + Convert.ToString(student.Adress_id) + " or" +
@@ -72,7 +78,7 @@ namespace StudentApplication.Controllers
         [Route("api/Student/{student_id}")]
         public async Task<HttpResponseMessage> PutAsync(int student_id, [FromBody] Students student)
         {
-            bool feedback = await studentService.UpdateStudentAsync(student_id, student);
+            bool feedback = await _studentService.UpdateStudentAsync(student_id, student);
 
             if (feedback != true)
             {
@@ -89,7 +95,7 @@ namespace StudentApplication.Controllers
         [Route("api/Student/{student_id}")]
         public async Task<HttpResponseMessage> DeleteAsync(int student_id)
         {
-            bool feedback = await studentService.DeleteStudentAsync(student_id);
+            bool feedback = await _studentService.DeleteStudentAsync(student_id);
             if (feedback != true)
             {
                 return Request.CreateResponse(HttpStatusCode.NotFound, "There is no student with id " + Convert.ToString(student_id));

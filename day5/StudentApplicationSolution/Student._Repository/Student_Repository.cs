@@ -12,7 +12,7 @@ using StudentRepository.Common;
 namespace Student._Repository
 {
 
-    public class StudentRepository: IStudentRepository<Students>
+    public class Student_Repository: IStudentRepository
 
 
     {

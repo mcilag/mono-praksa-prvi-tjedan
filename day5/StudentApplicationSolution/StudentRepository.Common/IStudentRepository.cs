@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Student.Model;
+using StudentModel.Common;
 
 namespace StudentRepository.Common
 {
-    public interface IStudentRepository<Students>
+    public interface IStudentRepository
     {
         Task<List<Students>> GetStudentsAsync();
         Task<Students> GetStudentByIdAsync(int id);
@@ -16,7 +18,7 @@ namespace StudentRepository.Common
         
     }
 
-    public interface IAdressRepository<Adress>
+    public interface IAdressRepository
     {
         Task<List<Adress>> GetAdressesAsync();
         Task<Adress> GetAdressByIdAsync(int id);

@@ -7,3 +7,5 @@ C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentRepositor
 C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentRepository.Common\obj\Debug\StudentRepository.Common.csproj.CopyComplete
 C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentRepository.Common\obj\Debug\StudentRepository.Common.dll
 C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentRepository.Common\obj\Debug\StudentRepository.Common.pdb
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentRepository.Common\bin\Debug\Student.Model.dll
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentRepository.Common\bin\Debug\Student.Model.pdb

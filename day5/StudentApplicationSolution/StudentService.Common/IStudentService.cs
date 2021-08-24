@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using StudentModel;
+using Student.Model;
 
 
 namespace StudentService.Common
 {
-    public interface IStudentService<Students>
+    public interface IStudentService
     {
         Task<List<Students>> GetStudentsAsync();
         Task<Students> GetStudentByIdAsync(int id);
@@ -16,7 +16,7 @@ namespace StudentService.Common
         Task<bool> UpdateStudentAsync(int id, Students student);
         Task<bool> DeleteStudentAsync(int id);
     }
-    public interface IAdressService<Adress>
+    public interface IAdressService
     { 
         Task<List<Adress>> GetAdressesAsync();
         Task<Adress> GetAdressByIdAsync(int id);

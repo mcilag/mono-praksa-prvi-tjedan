@@ -10,6 +10,7 @@ using System.Web.Http;
 using Student.Model;
 using Student._Service;
 using System.Threading.Tasks;
+using StudentService.Common;
 
 
 
@@ -19,14 +20,19 @@ namespace StudentApplication.Controllers
     public class AdressController : ApiController
     {
 
-        AdressService adressService = new AdressService();
+        IAdressService _adressService;
+
+        public AdressController(IAdressService adressService)
+        {
+            _adressService = adressService;
+        }
 
         // GET 
         [HttpGet]
         [Route("api/Adress")]
         public async Task<HttpResponseMessage> GetAsync()
         {
-            List<Adress> adress = await adressService.GetAdressesAsync();
+            List<Adress> adress = await _adressService.GetAdressesAsync();
 
             if(adress == null)
             {
@@ -40,7 +46,7 @@ namespace StudentApplication.Controllers
         [Route("api/Adress/{Adress_id}")]
         public async Task<HttpResponseMessage> GetByIdAsync(int adress_id)
         {
-            Adress adress = await adressService.GetAdressByIdAsync(adress_id);
+            Adress adress = await _adressService.GetAdressByIdAsync(adress_id);
 
             if (adress == null)
             {
@@ -56,7 +62,7 @@ namespace StudentApplication.Controllers
         [Route("api/Adress")]
         public async Task<HttpResponseMessage> PostAsync([FromBody] Adress adress)
         {
-            bool feedback = await adressService.CreateAdressAsync(adress);
+            bool feedback = await _adressService.CreateAdressAsync(adress);
             if(feedback != true)
             {
                 return Request.CreateResponse(HttpStatusCode.NotFound, "Adress with given id already exists.");
@@ -72,7 +78,7 @@ namespace StudentApplication.Controllers
         [Route("api/Adress/{adress_id}")]
         public async Task<HttpResponseMessage> PutAsync(int adress_id, [FromBody] Adress adress)
         {
-            bool feedback = await adressService.UpdateAdressAsync(adress_id, adress);
+            bool feedback = await _adressService.UpdateAdressAsync(adress_id, adress);
 
             if (feedback != true)
             {
@@ -88,7 +94,7 @@ namespace StudentApplication.Controllers
         [Route("api/Adress/{adress_id}")]
         public async Task<HttpResponseMessage> DeleteAsync(int adress_id)
         {
-            bool feedback = await adressService .DeleteAdressAsync(adress_id);
+            bool feedback = await _adressService.DeleteAdressAsync(adress_id);
             if (feedback != true)
             {
                 return Request.CreateResponse(HttpStatusCode.NotFound, "There is no adress with id " + Convert.ToString(adress_id) + " or it is connected" +

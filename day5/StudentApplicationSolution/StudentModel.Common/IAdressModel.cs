@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentModel.Common
 {
-    public interface IAdressModel
+    public interface IAdress
     {
         int Adress_id { get; set; }
         string Street { get; set; }
