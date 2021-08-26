@@ -7,7 +7,7 @@ using Student.Model;
 using Student._Repository;
 using StudentService.Common;
 using StudentRepository.Common;
-
+using StudentApplication.Common;
 
 
 
@@ -22,9 +22,9 @@ namespace Student._Service
             _studentRepository = studentRepository;
         }
 
-        public async Task<List<Students>> GetStudentsAsync()
+        public async Task<List<Students>> GetStudentsAsync(Sorter sorter, Pager pager, StudentFilter studentFilter)
         {
-            return await _studentRepository.GetStudentsAsync();
+            return await _studentRepository.GetStudentsAsync(sorter, pager, studentFilter);
 
         }
 

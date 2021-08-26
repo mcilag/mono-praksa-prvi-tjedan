@@ -45,3 +45,7 @@ C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student._Service
 C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student._Service\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student._Service\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student._Service\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student._Service\bin\Debug\AutoMapper.dll
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student._Service\bin\Debug\AutoMapper.xml
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student._Service\bin\Debug\StudentApplication.Common.dll
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student._Service\bin\Debug\StudentApplication.Common.pdb

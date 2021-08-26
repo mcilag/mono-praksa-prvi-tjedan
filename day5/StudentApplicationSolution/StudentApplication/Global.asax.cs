@@ -23,6 +23,7 @@ namespace StudentApplication
     {
         protected void Application_Start()
         {
+
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
@@ -33,13 +34,7 @@ namespace StudentApplication
             var config = GlobalConfiguration.Configuration;
 
             builder.RegisterType<Students>().As<IStudent>();
-            builder.RegisterType<Adress>().As<IAdress>();
-
-            builder.RegisterType<Student_Repository>().As<IStudentRepository>();
-            builder.RegisterType<AdressRepository>().As<IAdressRepository>();
-
-            builder.RegisterType<Student_Service>().As<IStudentService>();
-            builder.RegisterType<AdressService>().As<IAdressService>();
+            builder.RegisterType<Adress>().As<IAdress>();       
 
             builder.RegisterModule<RepositoryDIModule>();
             builder.RegisterModule<ServiceDIModule>();

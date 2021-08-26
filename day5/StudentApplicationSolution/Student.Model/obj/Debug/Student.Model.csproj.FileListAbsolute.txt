@@ -13,3 +13,5 @@ C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student.Model\ob
 C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student.Model\obj\Debug\Student.Model.csproj.CopyComplete
 C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student.Model\obj\Debug\Student.Model.dll
 C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student.Model\obj\Debug\Student.Model.pdb
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student.Model\bin\Debug\AutoMapper.dll
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\Student.Model\bin\Debug\AutoMapper.xml

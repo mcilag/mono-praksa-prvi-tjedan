@@ -11,6 +11,8 @@ using Student.Model;
 using Student._Service;
 using System.Threading.Tasks;
 using StudentService.Common;
+using AutoMapper;
+using StudentApplication.Common;
 
 
 
@@ -27,12 +29,13 @@ namespace StudentApplication.Controllers
             _studentService = studentService;
         }
 
+
         // GET 
         [HttpGet]
         [Route("api/Student")]
-        public async Task<HttpResponseMessage> GetAsync()
+        public async Task<HttpResponseMessage> GetAsync([FromUri] Pager pager, [FromUri] Sorter sorter, [FromUri] StudentFilter studentFilter)
         {
-            List<Students> student = await _studentService.GetStudentsAsync();
+            List<Students> student = await _studentService.GetStudentsAsync(sorter, pager, studentFilter);
             if (student == null)
             {
                 return Request.CreateResponse(HttpStatusCode.NotFound, "There are no students");

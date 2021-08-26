@@ -8,6 +8,7 @@ using System.Configuration;
 using Student.Model;
 using System.Threading.Tasks;
 using StudentRepository.Common;
+using StudentApplication.Common;
 
 
 namespace Student._Repository
@@ -20,12 +21,23 @@ namespace Student._Repository
         SqlConnection connection = new SqlConnection("Data Source=DESKTOP-BB9OT7S\\SQLEXPRESS;Initial Catalog = Martina; Integrated Security = True");
 
 
-        public async Task<List<Adress>> GetAdressesAsync()
+        public async Task<List<Adress>> GetAdressesAsync(Sorter sorter=null, Pager pager=null, AdressFilter adressFilter=null)
         {
 
+            Sorter Sorting = new Sorter();
+            string sort = Sorting.SortBy(sorter.Order_by, sorter.Sort_Order);
+
+            Pager Paging = new Pager();
+            string page = Paging.Page(pager.Page_number, pager.Page_size);
+
+            AdressFilter Filter = new AdressFilter();
+            string filter = Filter.FilterLike(adressFilter.Filter);
+
+
             SqlCommand command = new SqlCommand
-                ("SELECT * FROM Adress;", connection);
+                ("SELECT * FROM Adress " + filter + sort + page + " ;", connection);
             await connection.OpenAsync();
+
 
             SqlDataReader reader = await command.ExecuteReaderAsync();
             List<Adress> list_of_adresses = new List<Adress>();

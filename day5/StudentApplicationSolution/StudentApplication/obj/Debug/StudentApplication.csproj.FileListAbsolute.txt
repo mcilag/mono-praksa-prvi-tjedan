@@ -293,3 +293,7 @@ C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentApplicati
 C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentApplication\bin\Student._Service.dll.config
 C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentApplication\bin\Autofac.Integration.WebApi.pdb
 C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentApplication\bin\Autofac.Integration.WebApi.xml
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentApplication\bin\AutoMapper.dll
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentApplication\bin\AutoMapper.xml
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentApplication\bin\StudentApplication.Common.dll
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentApplication\bin\StudentApplication.Common.pdb

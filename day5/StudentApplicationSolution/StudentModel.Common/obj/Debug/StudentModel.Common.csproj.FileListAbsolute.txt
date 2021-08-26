@@ -4,3 +4,6 @@ C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentModel.Com
 C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentModel.Common\obj\Debug\StudentModel.Common.csproj.CoreCompileInputs.cache
 C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentModel.Common\obj\Debug\StudentModel.Common.dll
 C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentModel.Common\obj\Debug\StudentModel.Common.pdb
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentModel.Common\bin\Debug\AutoMapper.dll
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentModel.Common\bin\Debug\AutoMapper.xml
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentModel.Common\obj\Debug\StudentModel.Common.csproj.CopyComplete

@@ -1,0 +1,6 @@
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentApplication.Common\bin\Debug\StudentApplication.Common.dll
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentApplication.Common\bin\Debug\StudentApplication.Common.pdb
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentApplication.Common\obj\Debug\StudentApplication.Common.csproj.AssemblyReference.cache
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentApplication.Common\obj\Debug\StudentApplication.Common.csproj.CoreCompileInputs.cache
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentApplication.Common\obj\Debug\StudentApplication.Common.dll
+C:\Users\Martina\Desktop\Praksa\day5\StudentApplicationSolution\StudentApplication.Common\obj\Debug\StudentApplication.Common.pdb

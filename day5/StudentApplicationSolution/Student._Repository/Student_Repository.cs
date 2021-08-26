@@ -8,6 +8,7 @@ using System.Configuration;
 using Student.Model;
 using System.Threading.Tasks;
 using StudentRepository.Common;
+using StudentApplication.Common;
 
 namespace Student._Repository
 {
@@ -19,16 +20,28 @@ namespace Student._Repository
         SqlConnection connection = new SqlConnection("Data Source=DESKTOP-BB9OT7S\\SQLEXPRESS;Initial Catalog = Martina; Integrated Security = True");
 
 
-        public async Task<List<Students>> GetStudentsAsync()
+        public async Task<List<Students>> GetStudentsAsync(Sorter sorter=null, Pager pager=null, StudentFilter studentFilter=null)
         {
 
+           
+            Sorter Sorting = new Sorter();
+            string sort = Sorting.SortBy(sorter.Order_by, sorter.Sort_Order);
+
+            Pager Paging = new Pager();
+            string page = Paging.Page(pager.Page_number, pager.Page_size);
+
+            StudentFilter Filter = new StudentFilter();
+            string filter = Filter.FilterLike(studentFilter.Filter);
+            
+
             SqlCommand command = new SqlCommand
-                ("SELECT * FROM Student;", connection);
+                ("SELECT * FROM Student " + filter + sort + page + " ;", connection);
             await connection.OpenAsync();
 
+            
             SqlDataReader reader = await command.ExecuteReaderAsync();
             List<Students> list_of_students = new List<Students>();
-
+            
             if (reader.HasRows)
             {
                 while (await reader.ReadAsync())

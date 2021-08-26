@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.10.1.1\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,6 +52,13 @@
       <Project>{89278547-fb6b-48d2-b80a-deb3c334fc0a}</Project>
       <Name>Student.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\StudentApplication.Common\StudentApplication.Common.csproj">
+      <Project>{0869aeae-efb9-4928-95bf-f81f47ecd4e7}</Project>
+      <Name>StudentApplication.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

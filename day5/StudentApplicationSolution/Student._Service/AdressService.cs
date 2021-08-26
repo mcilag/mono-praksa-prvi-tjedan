@@ -7,6 +7,7 @@ using Student.Model;
 using Student._Repository;
 using StudentRepository.Common;
 using StudentService.Common;
+using StudentApplication.Common;
 
 
 namespace Student._Service
@@ -20,9 +21,9 @@ namespace Student._Service
             _adressRepository = adressRepository;
         }
 
-        public async Task<List<Adress>> GetAdressesAsync()
+        public async Task<List<Adress>> GetAdressesAsync(Sorter sorter, Pager pager, AdressFilter adressFilter)
         {
-            return await _adressRepository.GetAdressesAsync();
+            return await _adressRepository.GetAdressesAsync(sorter, pager, adressFilter);
 
         }
 

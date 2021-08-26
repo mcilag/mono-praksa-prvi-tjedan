@@ -51,6 +51,9 @@
     <Reference Include="Autofac.Integration.WebApi, Version=6.0.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\packages\Autofac.WebApi2.6.0.1\lib\net472\Autofac.Integration.WebApi.dll</HintPath>
     </Reference>
+    <Reference Include="AutoMapper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.10.1.1\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -289,6 +292,10 @@
     <ProjectReference Include="..\Student._Service\Student._Service.csproj">
       <Project>{469a62b2-ec80-4caa-902c-32ba08f46f53}</Project>
       <Name>Student._Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudentApplication.Common\StudentApplication.Common.csproj">
+      <Project>{0869aeae-efb9-4928-95bf-f81f47ecd4e7}</Project>
+      <Name>StudentApplication.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\StudentModel.Common\StudentModel.Common.csproj">
       <Project>{1d4bf549-da2f-4b36-8c50-9033b65baa1d}</Project>

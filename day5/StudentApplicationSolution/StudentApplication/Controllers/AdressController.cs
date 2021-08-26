@@ -11,7 +11,7 @@ using Student.Model;
 using Student._Service;
 using System.Threading.Tasks;
 using StudentService.Common;
-
+using StudentApplication.Common;
 
 
 
@@ -30,9 +30,9 @@ namespace StudentApplication.Controllers
         // GET 
         [HttpGet]
         [Route("api/Adress")]
-        public async Task<HttpResponseMessage> GetAsync()
+        public async Task<HttpResponseMessage> GetAsync([FromUri] Sorter sorter, [FromUri] Pager pager, [FromUri] AdressFilter adressFilter)
         {
-            List<Adress> adress = await _adressService.GetAdressesAsync();
+            List<Adress> adress = await _adressService.GetAdressesAsync(sorter, pager, adressFilter);
 
             if(adress == null)
             {
